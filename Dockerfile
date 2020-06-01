@@ -2,9 +2,16 @@ FROM python:3
 ENV PYTHONUNBUFFERED 1
 RUN mkdir /blog
 WORKDIR /blog
-COPY requirements.txt /blog/
-RUN pip3 install -r requirements.txt
-COPY . /blog/
+# Install pre-reqs
+RUN apt-get install -y python3 openssh-server
+
+
+# download and install pip
+RUN apt-get install -y python3-pip
+
+
 
 ENTRYPOINT ["python3", "./manage.py", "runserver"]
 ENTRYPOINT ["python3", "./manage.py", "migrate"]
+
+COPY . /blog/
