@@ -8,6 +8,7 @@ RUN apt-get install -y python3
 
 RUN pip3 install django 
 
+RUN pip3 install pytz
 
 COPY manage.py /blog/
 
