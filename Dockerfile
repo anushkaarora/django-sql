@@ -8,7 +8,7 @@ RUN apt-get install -y python3
 
 
 # download and install pip
-RUN apt-get install -y python3-pip
+RUN apt-get install -y python3-pip3
 
 
 
