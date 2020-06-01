@@ -6,7 +6,7 @@ WORKDIR /blog
 # Install pre-reqs
 RUN apt-get install -y python3 
 
-COPY --from= /blog/blog/manage.py
+COPY --from= /blog/blog/manage.py .
 
 ENTRYPOINT ["python3", "manage.py", "runserver"]
 ENTRYPOINT ["python3", "manage.py", "migrate"]
