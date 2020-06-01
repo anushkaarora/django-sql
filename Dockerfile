@@ -6,7 +6,7 @@ WORKDIR /blog
 # Install pre-reqs
 RUN apt-get install -y python3 
 
-RUN pip3 install django 
+RUN pip3 install django 3.0 
 
 RUN pip3 install pytz
 
