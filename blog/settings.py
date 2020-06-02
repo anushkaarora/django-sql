@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
 ]
 
 MIDDLEWARE = [
@@ -77,7 +77,7 @@ DATABASES = {
         'NAME': 'sql_data',
         'USER': 'root',
         'PASSWORD': 'password',
-        'HOST': '/var/run/mysqld/mysqld.sock',
+        'HOST': 'jdbc:mysql://django-sql-dev-mysql/',
         'PORT': '3306',
     }
 }
