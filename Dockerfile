@@ -1,13 +1,9 @@
 FROM python:3
 
-
 ENV PYTHONUNBUFFERED 1
 
 
-RUN mkdir/blog
 WORKDIR /blog
-
-
 
 
 RUN pip3 install django 
