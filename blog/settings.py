@@ -77,7 +77,7 @@ DATABASES = {
         'NAME': 'sql_data',
         'USER': 'root',
         'PASSWORD': 'password',
-        'HOST': '/opt/lampp/var/mysql/mysql.sock',
+        'HOST': '/var/run/mysqld/mysqld.sock',
         'PORT': '3306',
     }
 }
