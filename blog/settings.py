@@ -28,6 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['django-sql-dev-mysql']
 
 
+DJANGO_SETTINGS_MODULE="blog.settings"
+
 # Application definition
 
 INSTALLED_APPS = [
