@@ -77,8 +77,8 @@ DATABASES = {
         'NAME': 'sql_data',
         'USER': 'root',
         'PASSWORD': 'password',
-        'HOST': '/api/v1/namespaces/dev/endpoints/django-sql-dev-mysql',
-        'PORT': '3306',
+        'HOST': '/django-sql-dev-mysql',
+        
     }
 }
 
