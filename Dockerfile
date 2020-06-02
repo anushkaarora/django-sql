@@ -14,4 +14,5 @@ RUN pip3 install sqlparse
 
 ADD . /blog/
 
-bash -c "python manage.py migrate && python manage.py runserver 172.31.24.134:8080"
+
+CMD ["python3 manage.py migrate", "start", "python3 manage.py runserver 172.31.24.134:8080"]
