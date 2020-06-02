@@ -14,6 +14,9 @@ RUN pip3 install mysqlclient
 
 RUN pip3 install sqlparse
 
+RUN apt-get install mysql-server
+
+
 ADD . /blog/
 
 ENTRYPOINT ["python3", "manage.py", "runserver"]
