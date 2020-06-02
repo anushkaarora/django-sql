@@ -7,9 +7,7 @@ RUN mkdir /blog
 
 WORKDIR /blog
 
-# Install pre-reqs
 
-RUN apt-get install -y python3 
 
 RUN pip3 install django 
 
