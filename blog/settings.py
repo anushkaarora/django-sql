@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 ]
 
 MIDDLEWARE = [
@@ -76,7 +77,7 @@ DATABASES = {
         'NAME': 'sql_data',
         'USER': 'root',
         'PASSWORD': 'password',
-        'HOST': '/django-sql-dev-mysql',
+        'HOST': '/opt/lampp/var/mysql/mysql.sock',
         'PORT': '3306',
     }
 }
