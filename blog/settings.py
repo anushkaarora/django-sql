@@ -25,7 +25,7 @@ SECRET_KEY = '88cf5#*^jxr=!7+3#syl&)tgeu2r&pjuv6&7jk30%p%jpe&s=3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-sql-dev-mysql']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+
 ]
 
 MIDDLEWARE = [
@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'sql_data',
         'USER': 'root',
         'PASSWORD': 'password',
-        'HOST': '/django-sql-dev-mysql',
+        'HOST': '/my-django-app',
         'PORT': '3306',
     }
 }
