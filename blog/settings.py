@@ -77,7 +77,7 @@ DATABASES = {
         'NAME': 'sql_data',
         'USER': 'root',
         'PASSWORD': 'password',
-        'HOST': 'jdbc:mysql://django-sql-dev-mysql/',
+        'HOST': '/django-sql-dev-mysql',
         'PORT': '3306',
     }
 }
