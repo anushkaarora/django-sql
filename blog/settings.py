@@ -68,16 +68,21 @@ TEMPLATES = [
 WSGI_APPLICATION = 'blog.wsgi.application'
 
 
+import pymysql  # noqa: 402
+pymysql.version_info = (1, 4, 6, 'final', 0)  # change mysqlclient version
+pymysql.install_as_MySQLdb()
+
+
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sql_data',
+        'HOST': '/django-sql-dev-mysql',
         'USER': 'root',
         'PASSWORD': 'password',
-        'HOST': '/django-sql-dev-mysql',
+        'NAME': 'sql_data',
         
     }
 }
