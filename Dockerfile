@@ -14,4 +14,4 @@ RUN pip3 install sqlparse
 
 ADD . /blog/
 
-CMD ["bin/script.sh"]
+CMD ["python", "manage.py", "migrate"] 
