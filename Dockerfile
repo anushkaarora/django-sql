@@ -16,4 +16,6 @@ ADD . /blog/
 
 ENTRYPOINT ["python3", "manage.py", "runserver", "172.31.24.134:8080"]
 
+ENTRYPOINT ["python3", "manage.py", "makemigrations"]
+
 ENTRYPOINT ["python3", "manage.py", "migrate"]
