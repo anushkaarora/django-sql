@@ -14,4 +14,4 @@ RUN pip3 install sqlparse
 
 ADD . /blog/
 
-CMD ["script.sh"]
+CMD ["bin/script.sh"]
