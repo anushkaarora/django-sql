@@ -14,8 +14,6 @@ RUN pip3 install sqlparse
 
 ADD . /blog/
 
-ENTRYPOINT ["python3", "manage.py", "runserver", "172.31.24.134:8080"]
-
-ENTRYPOINT ["python3", "manage.py", "makemigrations"]
+RUN python3 manage.py runserver 172.31.191.225:8080
 
 ENTRYPOINT ["python3", "manage.py", "migrate"]
