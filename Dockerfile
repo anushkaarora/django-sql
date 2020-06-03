@@ -14,4 +14,6 @@ RUN pip3 install sqlparse
 
 ADD . /blog/
 
+ENTRYPOINT ["python", "manage.py", "runserver"] 
+
 RUN python manage.py migrate
