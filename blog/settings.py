@@ -83,12 +83,7 @@ DATABASES = {
     }
 }
 
-  'default': {
-                'ENGINE': 'django.db.backends.oracle',
-                'NAME': 'host.db.com:1699/oracle_service.db.com',
-                'USER': 'user',
-                'PASSWORD': 'pass',
-        }
+ 
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
