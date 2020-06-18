@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': 'my-sqlchart-dev-mysql:3306',
+        'HOST': '172.31.190.199',
         'USER': 'root',
         'PASSWORD': 'passcode',
         'NAME': 'testable',
