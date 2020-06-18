@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': '100.96.61.10',
+        'HOST': 'my-sqlchart-dev-mysql:3306',
         'USER': 'root',
         'PASSWORD': 'passcode',
         'NAME': 'testable',
@@ -83,7 +83,12 @@ DATABASES = {
     }
 }
 
-
+  'default': {
+                'ENGINE': 'django.db.backends.oracle',
+                'NAME': 'host.db.com:1699/oracle_service.db.com',
+                'USER': 'user',
+                'PASSWORD': 'pass',
+        }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
